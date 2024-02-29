@@ -1,0 +1,443 @@
+/* Reset and Base Styles */
+
+html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+} */
+
+a,
+.btn {
+    transition: all 300ms ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Global Styles */
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #ff0000;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #ff0000;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: row;
+    background-color: #fff;
+    color: gradient(to right, #000000, #ff0000);
+    width: 100%;
+    height: 60px;
+    transition: 0.3s;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    background-image: linear-gradient(75deg, #ff0000, #ffd000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    transition: color 0.3s ease-in-out;
+    text-decoration: underline;
+    text-underline-offset: 9px;
+    text-decoration-thickness: 5px;
+    text-decoration-style: solid;
+    text-decoration-color: #ff0000;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    background: url('./img/Adventure.jpg') no-repeat center;
+    background-image: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100vh;
+    font-size: larger;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background-image: linear-gradient(75deg, #ff0000, #ffbf00);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Home Section */
+.hero {
+    text-align: justify;
+    padding: 2rem 0;
+    font-size: x-large;
+}
+
+.hero,
+p {
+    margin-bottom: 27px;
+}
+
+.hero,
+h2 {
+    font-weight: 600;
+    background-image: linear-gradient(43deg, #ff0000, #ffd000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Destinations Section */
+
+.popular {
+    margin: 20px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: x-large;
+    background-color: #333;
+    padding: 10px;
+}
+
+.popular h2 {
+    background-image: linear-gradient(65deg, #ff8400, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#destinations {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff8400;
+}
+
+.destination {
+    margin-bottom: 2rem;
+}
+
+.destination img {
+    display: flex;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Packages Section */
+
+#packages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .package p,
+h3 {
+    font-size: 1.3rem;
+} */
+
+.package p {
+    margin-top: 0.5rem;
+}
+
+.package .package {
+    margin-bottom: 2rem;
+}
+
+.package img {
+    display: flex;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.package h3 {
+    margin-top: 0.5rem;
+}
+
+.price {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    color: #333;
+}
+
+/* About Section */
+
+.pro {
+    font-family: 'Call of Ops Duty';
+    font-size: larger;
+}
+
+#about h2,
+p {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+}
+
+#about p {
+    /* font-size: 1.3rem; */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+#about button {
+    margin-left: 270px;
+    align-items: center;
+}
+
+/* Contact Section */
+
+#contact h2,
+p {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-logo h1 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.footer-links ul {
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd700;
+}
+
+/* Responsive Styles */
+
+
+@media only screen and (max-width: 768px) {
+
+    img {
+        margin: 10px 0 10px 10px;
+        height: 200px;
+    }
+
+    .pal {
+        font-size: 1.2rem;
+        display: flex;
+        text-align: justify;
+        margin: 3px;
+        /* border: solid #333; */
+        padding: 17px;
+        border-radius: 100vh;
+    }
+
+    h3 {
+        margin-left: 69px;
+    }
+
+    .btn {
+        margin-left: 20px;
+    }
+
+    .price {
+        margin-left: 35px;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        background-color: #000000;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-top: 0.5rem;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    section {
+        padding: 1rem 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* Additional responsive styles... */
+}
+
+@media only screen and (min-width: 1500px) {
+    .mobile-nav {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

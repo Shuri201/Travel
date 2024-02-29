@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="Header">
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#destinations" class="nav-link">Destinations</a></li>
+          <li><a href="#packages" class="nav-link">Packages</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <h1>Travel Explorer</h1>
+      <nav class="mobile-nav">
+        <ul>
+          <li>
+            <a onclick="location.href='./#home'">Home</a>
+          </li>
+          <li>
+            <a onclick="location.href='./#destinations'">Destinations</a>
+          </li>
+          <li>
+            <a onclick="location.href='./#packages'">Packages</a>
+          </li>
+          <li>
+            <a onclick="location.href='./#about'">About Us</a>
+          </li>
+          <li>
+            <a onclick="location.href='./#contact'">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="hero">
+        <h2>Explore the World with Us</h2>
+        <p>Your adventure begins here.</p>
+        <a href="#destinations" class="btn">Discover Destinations</a>
+      </div>
+    </section>
+
+    <div class="popular">
+      <h2>Popular Destinations</h2>
+    </div>
+
+    <section id="destinations">
+      >
+      <div class="destination">
+        <img src="./img/streets.jpg" alt="Destination 1" height="355px" />
+        <h3>Cityscape Paradise</h3>
+        <p class="pal">
+          Discover the bustling streets and vibrant culture of Cityscape
+          Paradise.
+        </p>
+        <a href="#" class="btn">Explore More</a>
+      </div>
+
+      <!-- More destinations... -->
+
+      <div class="destination">
+        <img src="./img/Miami.jpg" alt="Destination 3" height="355px" />
+        <h3>Mountain Retreat</h3>
+        <p class="pal">
+          Experience the tranquility of Mountain Retreat with breathtaking views
+          and hiking trails.
+        </p>
+        <a href="#" class="btn">Explore More</a>
+      </div>
+    </section>
+
+    <div class="popular"><h2>Featured Packages</h2></div>
+
+    <section id="packages">
+      <div class="package">
+        <img src="./img/Hawaii.jpg" alt="Package 1" height="355px" />
+        <h3>Adventure Getaway</h3>
+        <p class="pal">
+          Embark on an exciting adventure with our Adventure Getaway package.
+        </p>
+        <span class="price"><strong>$999</strong></span>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+
+      <!-- More packages... -->
+
+      <div class="package">
+        <img src="./img/Sky Full of stars.jpg" alt="Package 3" height="355px" />
+        <h3>Luxury Escape</h3>
+        <p class="pal">
+          Indulge in luxury and relaxation with our exclusive Luxury Escape
+          package.
+        </p>
+        <span class="price"><strong>$1999</strong></span>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </section>
+
+    <div class="popular"><h2>About Us</h2></div>
+
+    <section id="about">
+      <p class="pro">
+        Travel Explorer is your trusted partner for unforgettable travel
+        experiences. We are committed to providing the highest quality service
+        and ensuring every journey is a memorable one. Welcome to [Your Travel
+        Agency Name]! At Travel Explorer, we believe that every journey is an
+        opportunity to discover, explore, and create lasting memories.
+        Established with a passion for travel and a commitment to providing
+        exceptional experiences, we are your trusted partner in turning your
+        travel dreams into reality. Our Mission: At the heart of our mission is
+        a dedication to delivering unparalleled travel services that cater to
+        the unique preferences and desires of each traveler. We strive to create
+        seamless and unforgettable journeys, ensuring that every moment is
+        filled with joy, discovery, and enrichment. Why Choose Travel Explorer?
+        Expertise: Our team comprises seasoned travel experts who are passionate
+        about crafting personalized itineraries tailored to your interests and
+        preferences. We bring a wealth of knowledge and experience to curate
+        exceptional travel experiences. Global Network: With a vast network of
+        trusted partners and suppliers worldwide, we have the ability to unlock
+        exclusive access, providing you with unique and authentic experiences in
+        every corner of the globe. Customer-Centric Approach: Your satisfaction
+        is our priority. We take the time to understand your travel aspirations
+        and work closely with you to design bespoke itineraries that exceed your
+        expectations. 24/7 Support: Traveling can sometimes come with unexpected
+        challenges. Rest easy knowing that our dedicated support team is
+        available around the clock to assist you, ensuring a smooth and
+        stress-free journey. Our Services: Tailor-Made Itineraries Group Travel
+        Luxury Escapes Adventure Tours Corporate Travel Destination Weddings and
+        Honeymoons Embark on a journey with Travel Explorer and let us redefine
+        the way you experience the world. Whether you're seeking relaxation on a
+        tropical beach, cultural immersion in historic cities, or thrilling
+        adventures off the beaten path, we are here to make your travel dreams
+        come true. Let's explore the world together! Travel Explorer.
+      </p>
+      <button class="btn" onclick="location.href='https://github.com/Shuri201'">
+        Github
+      </button>
+    </section>
+
+    <div class="popular"><h2>Contact Us</h2></div>
+
+    <section id="contact">
+      <p class="pal">
+        Have questions or need assistance planning your trip? Contact our team
+        for personalized support.
+      </p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./img/logo.png" alt="Travel Explorer Logo" />
+          <h1>Travel Explorer</h1>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>&copy; 2023 Travel Explorer. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
